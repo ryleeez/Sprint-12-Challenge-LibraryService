@@ -15,14 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@RestController
 @RequestMapping(value = "/libraries")
 public class LibraryController {
 
+    @Autowired
     LibraryService libraryService;
-
-    public LibraryController(LibraryService libraryService) {
-        this.libraryService = libraryService;
-    }
 
     @GetMapping(value = "")
     public ResponseEntity<?> getLibraries() {

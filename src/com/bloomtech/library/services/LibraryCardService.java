@@ -9,13 +9,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class LibraryCardService {
 
+    @Autowired
     private LibraryCardRepository libraryCardRepository;
-
-    public LibraryCardService(LibraryCardRepository libraryCardRepository) {
-        this.libraryCardRepository = libraryCardRepository;
-    }
 
     public List<LibraryCard> getLibraryCardsByLibraryName(String libraryName) {
         return libraryCardRepository.findByLibraryName(libraryName);

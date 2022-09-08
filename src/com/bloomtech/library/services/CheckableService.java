@@ -11,13 +11,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class CheckableService {
 
+    @Autowired
     private CheckableRepository checkableRepository;
-
-    public CheckableService(CheckableRepository checkableRepository) {
-        this.checkableRepository = checkableRepository;
-    }
 
     public List<Checkable> getAll() {
         return checkableRepository.findAll();

@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@Component
 public class Datastore {
     private final List<Library> libraries = new ArrayList<>();
     private final List<Patron> patrons = new ArrayList<>();

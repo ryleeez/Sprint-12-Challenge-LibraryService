@@ -10,13 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class CheckableRepository {
 
+    @Autowired
     private Datastore datastore;
-
-    public CheckableRepository(Datastore datastore) {
-        this.datastore = datastore;
-    }
 
     public List<Checkable> findAll() {
         List<Checkable> checkables = new ArrayList<>();

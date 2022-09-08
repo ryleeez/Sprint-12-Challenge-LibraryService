@@ -13,13 +13,11 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Repository
 public class LibraryCardRepository {
 
+    @Autowired
     private Datastore datastore;
-
-    public LibraryCardRepository(Datastore datastore) {
-        this.datastore = datastore;
-    }
 
     public List<LibraryCard> findAll() {
         return datastore.getLibraryCards();

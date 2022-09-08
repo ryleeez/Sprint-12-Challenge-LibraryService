@@ -8,13 +8,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PatronService {
 
+    @Autowired
     private PatronRepository patronRepository;
-
-    public PatronService(PatronRepository patronRepository) {
-        this.patronRepository = patronRepository;
-    }
 
     public void save(Patron patron) {
         List<Patron> patrons = patronRepository.findAll();

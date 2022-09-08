@@ -9,13 +9,11 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class LibraryRepository {
 
+    @Autowired
     private Datastore datastore;
-
-    public LibraryRepository(Datastore datastore) {
-        this.datastore = datastore;
-    }
 
     public List<Library> findAll() {
         return datastore.getLibraries();

@@ -11,14 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@RestController
 @RequestMapping(value = "/checkables")
 public class CheckableController {
 
+    @Autowired
     CheckableService checkableService;
-
-    public CheckableController(CheckableService checkableService) {
-        this.checkableService = checkableService;
-    }
 
     @GetMapping(value = "")
     public ResponseEntity<?> getCheckables() {

@@ -18,15 +18,13 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Service
 public class LibraryService {
 
     //TODO: Implement behavior described by the unit tests in tst.com.bloomtech.library.services.LibraryService
 
+    @Autowired
     private LibraryRepository libraryRepository;
-
-    public LibraryService(LibraryRepository libraryRepository) {
-        this.libraryRepository = libraryRepository;
-    }
 
     public List<Library> getLibraries() {
         return new ArrayList<>();

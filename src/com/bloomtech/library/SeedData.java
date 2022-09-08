@@ -16,13 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
-/* TODO: Uncomment these two properties for DI pattern implementation.
- Note that no other component will need the ConditionalOnProperty- this is logic for the tests
- see the README Technical Details if you are curious
- */
-//@ConditionalOnProperty(prefix = "seeddata", name="on", havingValue = "true")
-//@Component
+@Component
 public class SeedData implements CommandLineRunner {
 
     private LibraryService libraryService;

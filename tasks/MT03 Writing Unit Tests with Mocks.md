@@ -7,7 +7,7 @@ even for the most basic API requests, mocking dependencies is very
 important.
 
 For Spring, this means using the `@MockBean` annotation to create
-a mock of any component we would otherwise be `@Autowiring` in.
+a mock of any **component** we would otherwise be `@Autowiring` in.
 
 We can then use `Mockito.when().thenReturn()` structure to return
 dummy data instead of calling the real method of a dependent class.
@@ -22,10 +22,11 @@ gradle command to quickly test for code coverage, or you can select
 `run with coverage` on your test file to generate a detailed 
 report (as an html file) under `build/jacocoHtml`.
 
-Make sure to only `@Autowire` the `CheckableService`. All other
+Make sure to only `@Autowire` the component under test! All other
 dependencies must be mocked. Your test code will be tested using
 Reflection again so please make sure to continue following the
-naming conventions.
+naming conventions. You can use the `LibraryServiceTest` as a 
+*reference*.
 
 ### Completion
 
