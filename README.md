@@ -45,9 +45,6 @@ behaviors described by each unit test.
 3. [MT03 Writing Unit Tests with Mocks](tasks/MT03 Writing Unit Tests with Mocks.md)
 Use mocking to write unit tests for the `CheckableService`. You must have
 95% code coverage or more.
-4. [MT04 Deploy on AWS Lambda](tasks/MT04 Deploy on AWS Lambda.md)
-Upload this project to AWS Lambda by following the instructions in the
-`MT04 Lambda Deploy.md` task description.
 
 ## Technical Information
 
