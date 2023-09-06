@@ -35,14 +35,14 @@ A brief summary of each Mastery Task follows below.
 Follow the links for a full description of each task, or
 check out the `tasks` directory.
 
-1. [MT01 Implement Dependency Injection](tasks/MT01 Implement Dependency Injection.md)
+1. [MT01 Implement Dependency Injection](tasks/MT01%20Implement%20Dependency%20Injection.md)
 Refactor the dependency management of the base project to make use of Spring's
 DI framework capabilities. Remove constructors and replace with `@Autowired` 
 field-injection annotations.
-2. [MT02 Implement TDD Unit Test Behavior](tasks/MT02 Implement TDD Unit Test Behavior.md)
+2. [MT02 Implement TDD Unit Test Behavior](tasks/MT02%20Implement%20TDD%20Unit%20Test%20Behavior.md)
 Read over the tests in the `LibraryServiceTest` class and implement the
 behaviors described by each unit test.
-3. [MT03 Writing Unit Tests with Mocks](tasks/MT03 Writing Unit Tests with Mocks.md)
+3. [MT03 Writing Unit Tests with Mocks](tasks/MT03%20Writing%20Unit%20Tests%20with%20Mocks.md)
 Use mocking to write unit tests for the `CheckableService`. You must have
 95% code coverage or more.
 
