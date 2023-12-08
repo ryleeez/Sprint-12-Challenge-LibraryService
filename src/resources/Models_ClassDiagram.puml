@@ -25,7 +25,7 @@ class CheckableAmount {
 class LibraryCard {
     -patron: Patron
     -library: Library
-    -checkouts: List<Checkouts>
+    -checkouts: List<Checkout>
 }
 
 class Checkout {
